@@ -1,0 +1,306 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #cdbfc0;
+  color: #32403f;
+}
+
+.title-container {
+  margin-top:4%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0.5;
+}
+
+.component {
+  width: 75%;
+  height: 90%;
+  background-color: transparent;
+}
+
+.allinfo {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  background: #cdbfc0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.button-group-1{
+  border-radius: 20px ;
+  padding:15px 5px;
+  border: none;
+  height: min-content;
+  min-width: min-content;
+  width: 300px;
+  color: #32403f;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #32403f 25%, #cdbfc0 25%);
+
+ 
+}
+.button-group-1>button{
+  cursor: pointer;
+  margin: 0;
+  height: 100%;
+  border: none;
+  color: inherit;
+  width: 50%;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;  
+}
+.button-group-1>button:active{
+  font-size: 13px;
+}
+.button-group-1.randomButton>button:nth-child(2){
+  color: #32403f;
+}
+.button-group-1.idButton>button:first-child{
+  color: #32403f;
+}
+
+.randomButton{
+  animation: slideRightToLeft .2s linear forwards;
+
+
+}
+.idButton{
+  animation: slideLeftToRight .2s linear forwards;
+
+
+}
+
+@keyframes slideLeftToRight {
+  100% {
+    background-position-x: -50%;
+    color: white;
+
+  }
+}
+
+@keyframes slideRightToLeft {
+  
+  
+  0% {
+   
+   background-position-x: -50%;
+   
+ }
+ 100% {
+   background-position-x: 0%;
+ color: white;
+ }
+}
+.button-group-2{
+  margin-bottom: 60px;
+  width: 60%;
+display: flex;
+justify-content: space-around;
+}
+
+.button-2 {
+  margin: 3px;
+  height: min-content;
+  min-width: max-content;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin-bottom: 15px;
+  background-color: #32403f;
+}
+
+.button-2:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-2:active, .logo:active {
+  transform: scale(0.9);
+  box-shadow: none;
+}
+
+.transition-enter-active,
+.transition-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.transition-enter,
+.transition-leave-to {
+  opacity: 0;
+}
+
+.footer-info {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: transparent;
+  color: #32403f;
+  font-size: 16px;
+}
+
+.footer {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+}
+
+.links {
+  background-color: #32403f;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-around;
+  background: transparent;
+  position: relative;
+  left: 60%;
+  transform: translate(-70%, 0);
+  width: 70%;
+}
+
+.logo {
+  min-width: 25px;
+  max-width: 40px;
+  transition: transform 0.3s ease;
+  background: transparent;
+  margin: 5px;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+}
+h2 {
+  text-align: center;
+
+}
+
+@media screen and (max-height:750px) {
+   
+    .title{
+        font-size: 28px;
+    }
+  .dice{
+    width: 30px;
+    height: 30px;
+  }
+  button-group-1>button{
+    font-size: 9px;
+  }
+  .button-group-1{
+    margin-top: 40px;
+height: 50px !important;
+font-size: 9px;
+padding: 2px;
+  }
+  .button-2{
+    font-size: 10px;
+    padding: 4px;
+font-size: smaller;
+  }
+  .id,.advice {
+    font-size: 20px;
+    padding: 5%;
+  }
+  .footer-info {
+    font-size: 13px;
+  }
+  
+  
+  .links {
+   
+    font-size: 9px;
+    
+  }
+  
+  .logo {
+    min-height: 15px;
+    max-height: 30px;
+   
+    margin: 4px;
+  }
+  
+
+}
+
+@media screen and (max-width:370px) {
+    .title{
+        font-size: 28px;
+    }
+  .dice{
+    width: 30px;
+    height: 30px;
+  }
+  button-group-1>button{
+    font-size: 14px;
+  }
+  .button-group-1{
+    width: 200px !important;
+  }
+  .id,.advice {
+    font-size: 20px;
+    padding: 5%;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .footer-info {
+  font-size: 13px;
+}
+
+
+.links {
+ 
+  font-size: 9px;
+  
+}
+
+.logo {
+  min-width: 15px;
+  max-width: 30px;
+ 
+  margin: 4px;
+}
+.button-group-1{
+  width: 200px;
+}
+}
+

@@ -1,0 +1,76 @@
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #32403f;
+  }
+  
+  .image-container {
+    background: transparent;
+  }
+  
+  .dice {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .dice:active {
+    transform: scale(0.9);
+  }
+  
+  .advice,
+  .id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 3%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    color: #4c645f;
+    margin-bottom: 20px;
+    background-color: #cdbfc0;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .id {
+    margin: 0;
+    width: 40px;
+    position: relative;
+  }
+  
+  .shake-animation {
+    animation-name: shake-dice;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake-dice {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    25% {
+      transform: rotate(50deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  
+    75% {
+      transform: rotate(-50deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
