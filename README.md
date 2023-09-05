@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # advicegen
+=======
+# advice-generator-vue
+>>>>>>> a0457b1b9141b98704caaebfe1ec5e44bdd83d0b
 
 ## Project setup
 ```
@@ -15,6 +19,7 @@ npm run serve
 npm run build
 ```
 
+<<<<<<< HEAD
 ### Lints and fixes files
 ```
 npm run lint
@@ -22,3 +27,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+>>>>>>> a0457b1b9141b98704caaebfe1ec5e44bdd83d0b
