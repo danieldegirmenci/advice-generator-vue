@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # advicegen
 =======
 # advice-generator-vue
